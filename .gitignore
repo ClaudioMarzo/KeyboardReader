@@ -1,43 +1,143 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+# Arquivos e diretórios gerados pelo Flutter
+/build/
+/ios/.symlinks/
+/ios/Pods/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_assets/
+/ios/Flutter/flutter_export_environment.sh
 
-# IntelliJ related
+# Arquivos e diretórios gerados pelo Dart e Flutter
+**/.dart_tool/
+**/flutter_export_environment.sh
+
+# Arquivos e diretórios gerados pelo Android Studio, IntelliJ, etc.
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+*.pyc
+*.pyo
+*.pyd
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# Arquivos e diretórios gerados pelo Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+# Arquivos e diretórios gerados pelo Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vc.db
+*.vc.VC.opendb
+*.vc.opendb
+*.filters
+*.ncb
+*.opt
+*.pdb
+*.ilk
+*.aps
+*.sbr
+*.bak
+*.cache
+*.ncb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vc.db
+*.vc.VC.opendb
+*.vc.opendb
+*.filters
+*.ncb
+*.opt
+*.pdb
+*.ilk
+*.aps
+*.sbr
+*.bak
+*.cache
 
-# Symbolication related
-app.*.symbols
+# Arquivos e diretórios gerados pelo Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.tmp
+*~
+*.bak
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+*.pyc
+*.pyo
+*.pyd
 
-# Obfuscation related
-app.*.map.json
+# Arquivos e diretórios gerados pelo Linux
+*~
+*.bak
+*.swp
+*.swo
+*.swn
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.cache
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Arquivos gerais
+image-1.png
