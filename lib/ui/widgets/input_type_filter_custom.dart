@@ -10,21 +10,19 @@ class InputTypeFilterCustom extends StatefulWidget {
 }
 
 class _InputTypeFilterCustomState extends State<InputTypeFilterCustom> {
-  String dropdownValue = "Filtrar por";
+  String dropdownValue = list.first;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 47,
-      width: 250,
+      width: 277,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(5),
       ),
       child: DropdownMenu<String>(
-        initialSelection: dropdownValue,
-        textStyle: TextStyles.i.textMedium
-            .copyWith(fontSize: 14, color: ColorsCustom.i.grey),
-        trailingIcon: const Icon(Icons.arrow_downward),
+        hintText: 'Filtrar por',
+        trailingIcon: const Icon(Icons.arrow_drop_down_sharp),
         onSelected: (String? value) {
           setState(() {
             dropdownValue = value!;
@@ -35,7 +33,6 @@ class _InputTypeFilterCustomState extends State<InputTypeFilterCustom> {
             return DropdownMenuEntry<String>(
               value: value,
               label: value,
-
               // style: ButtonStyle()
             );
           },

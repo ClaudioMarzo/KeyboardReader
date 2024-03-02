@@ -8,39 +8,37 @@ class AppBarCustom extends AppBar {
   AppBarCustom({
     super.key,
   }) : super(
-          leading: Container(
-            alignment: Alignment.center,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                IconButton(
-                  icon: Icon(
-                    Icons.arrow_back_ios,
-                    color: ColorsCustom.i.white,
-                  ),
-                  onPressed: null,
-                ),
-                Container(
-                  child: Expanded(
-                    child: Text(
-                      "Pesquisa Item",
-                      style: TextStyles.i.textRegular
-                          .copyWith(fontSize: 18, color: ColorsCustom.i.white),
-                    ),
-                  ),
-                ),
-              ],
+          elevation: 0,
+          toolbarHeight: 94,
+          leading: Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: IconButton(
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: ColorsCustom.i.white,
+              ),
+              onPressed: null,
             ),
           ),
-          title: const InputSearchCustom(),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                textAlign: TextAlign.start,
+                "Pesquisar Item",
+                style: TextStyles.i.textRegular
+                    .copyWith(fontSize: 18, color: ColorsCustom.i.white),
+              ),
+              const InputSearchCustom(),
+              const InputTypeFilterCustom(),
+            ],
+          ),
           actions: <Widget>[
-            const InputTypeFilterCustom(),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.only(right: 40),
               child: Image.asset(
                 'assets/images/logo_bemol.png',
-                fit: BoxFit.cover,
                 width: 120,
                 height: 52.09,
               ),

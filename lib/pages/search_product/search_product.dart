@@ -12,12 +12,7 @@ class _SearchProductState extends State<SearchProduct> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(94.0),
-        child: Container(
-          child: AppBarCustom(),
-        ),
-      ),
+      appBar: AppBarCustom(),
       body: Container(),
     );
   }
