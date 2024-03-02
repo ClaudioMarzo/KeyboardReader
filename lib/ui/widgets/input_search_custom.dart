@@ -15,21 +15,23 @@ class _InputSearchState extends State<InputSearchCustom> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 60,
+      height: 47,
+      width: 678,
       child: TextField(
         controller: _queryTextController,
         autofocus: true,
-        cursorColor: Colors.blue,
+        cursorColor: ColorsCustom.i.red,
         onTap: () => FocusScope.of(context).unfocus(),
         onChanged: (value) {},
-        style: const TextStyle(color: Colors.black),
+        style: TextStyle(color: ColorsCustom.i.black),
         decoration: InputDecoration(
-          hintStyle: TextStyles.i.textRegular,
+          hintStyle: TextStyles.i.textRegular
+              .copyWith(fontSize: 14, color: ColorsCustom.i.grey),
           filled: true,
-          fillColor: Colors.white,
+          fillColor: ColorsCustom.i.white,
           hintText: 'Busque por Descrição ou Código Bemol',
           suffixIcon: TypeIconCustom(
-            icon: 1,
+            icon: IconType.busca,
             onPressed: () {
               FocusScope.of(context).unfocus();
             },

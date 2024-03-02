@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:profit_margin/ui/style/colors.dart';
 import 'package:profit_margin/ui/style/text_style.dart';
 import 'package:profit_margin/ui/widgets/input_search_custom.dart';
+import 'package:profit_margin/ui/widgets/input_type_filter_custom.dart';
 
 class AppBarCustom extends AppBar {
   AppBarCustom({
     super.key,
   }) : super(
-          backgroundColor: ColorsCustom.i.blue,
           leading: Container(
             alignment: Alignment.center,
             child: Row(
@@ -35,18 +35,7 @@ class AppBarCustom extends AppBar {
           ),
           title: const InputSearchCustom(),
           actions: <Widget>[
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {
-                // Ação da aba de pesquisa
-              },
-            ),
-            IconButton(
-              icon: const Icon(Icons.filter_list),
-              onPressed: () {
-                // Ação da aba de filtro
-              },
-            ),
+            const InputTypeFilterCustom(),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Image.asset(
