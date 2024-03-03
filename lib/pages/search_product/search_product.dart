@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:profit_margin/actions/app_actions.dart';
+import 'package:profit_margin/pages/search_product/connected_devices.dart';
+import 'package:profit_margin/pages/search_product/interacts_serial_ports.dart';
 import 'package:profit_margin/ui/widgets/app_bar_custom.dart';
 import 'package:profit_margin/ui/widgets/button_custom.dart';
 
@@ -21,13 +23,19 @@ class _SearchProductState extends State<SearchProduct> {
           shortcuts: <LogicalKeySet, Intent>{
             LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyP):
                 ConfirmProductIntent(),
-            LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyD):
+            LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyI):
                 ViewDetailsIntent(),
+            LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyD):
+                ConnectedDevicesIntent(),
+            LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyU):
+                InteractsSerialPortsIntent(),
           },
           child: Actions(
             actions: <Type, Action<Intent>>{
               ConfirmProductIntent: ConfirmProductAction(),
               ViewDetailsIntent: ViewDetailsAction(),
+              ConnectedDevicesIntent: ConnectedDevicesAction(context),
+              InteractsSerialPortsIntent: InteractsSerialPortsAction(context),
             },
             child: Focus(
               autofocus: true,
@@ -38,21 +46,36 @@ class _SearchProductState extends State<SearchProduct> {
                   ButtonCustom(
                     label: 'Confirmar produto \nCTRL + P',
                     onPressed: () {
-                      print('Confirmar produto');
+                      print('Botão confirmar produto');
                     },
                   ),
                   const SizedBox(width: 20),
                   ButtonCustom(
                     label: 'Mais informações\nCTRL + I',
                     onPressed: () {
-                      print('Mais detalhes');
+                      print('Botão mais detalhes');
                     },
                   ),
                   const SizedBox(width: 20),
                   ButtonCustom(
                     label: 'Dispositivos conectados\nCTRL + D',
                     onPressed: () {
-                      print('Mais detalhes');
+                      print('Botão dispositivos conectados');
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (context) => const ConnectedDevices()),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 20),
+                  ButtonCustom(
+                    label: 'Interage com portas seriais\nCTRL + U',
+                    onPressed: () {
+                      print('Botão portas seriais');
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (context) => const InteractsSerialPorts()),
+                      );
                     },
                   ),
                 ],
