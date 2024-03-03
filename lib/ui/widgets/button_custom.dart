@@ -23,9 +23,11 @@ class ButtonCustom extends StatefulWidget {
 class _ButtonCustomState extends State<ButtonCustom> {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: widget.width,
-      height: widget.height,
+    return ConstrainedBox(
+      constraints: BoxConstraints(
+        minWidth: widget.width ?? 0,
+        minHeight: widget.height ?? 0,
+      ),
       child: ElevatedButton(
         onPressed: widget.onPressed,
         style: ButtonStyle(

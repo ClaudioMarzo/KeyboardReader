@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:profit_margin/actions/app_actions.dart';
@@ -27,31 +26,37 @@ class _SearchProductState extends State<SearchProduct> {
           },
           child: Actions(
             actions: <Type, Action<Intent>>{
-              ConfirmProductAction: ConfirmProductAction(),
-              ViewDetailsAction: ViewDetailsAction(),
+              ConfirmProductIntent: ConfirmProductAction(),
+              ViewDetailsIntent: ViewDetailsAction(),
             },
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                TextButton(
-                  onPressed: () => Actions.invoke(context, ViewDetailsIntent()),
-                  child: const Text('Ver Detalhes'),
-                ),
-                // ButtonCustom(
-                //   label: 'Confirmar produto',
-                //   onPressed: () {
-                //     Actions.invoke(context, ConfirmProductIntent());
-                //   },
-                // ),
-                // const SizedBox(width: 20),
-                // ButtonCustom(
-                //   label: 'Mais detalhes',
-                //   onPressed: () {
-                //     Actions.invoke(context, ViewDetailsIntent());
-                //   },
-                // ),
-              ],
+            child: Focus(
+              autofocus: true,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  ButtonCustom(
+                    label: 'Confirmar produto \nCTRL + P',
+                    onPressed: () {
+                      print('Confirmar produto');
+                    },
+                  ),
+                  const SizedBox(width: 20),
+                  ButtonCustom(
+                    label: 'Mais informações\nCTRL + I',
+                    onPressed: () {
+                      print('Mais detalhes');
+                    },
+                  ),
+                  const SizedBox(width: 20),
+                  ButtonCustom(
+                    label: 'Dispositivos conectados\nCTRL + D',
+                    onPressed: () {
+                      print('Mais detalhes');
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
         ),
