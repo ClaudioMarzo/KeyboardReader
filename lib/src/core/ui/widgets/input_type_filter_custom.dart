@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:profit_margin/src/core/ui/style/colors.dart';
-import 'package:profit_margin/src/core/ui/style/text_style.dart';
 
 class InputTypeFilterCustom extends StatefulWidget {
   const InputTypeFilterCustom({super.key});

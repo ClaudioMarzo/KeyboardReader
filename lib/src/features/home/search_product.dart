@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:profit_margin/src/core/actions/app_actions.dart';
-import 'package:profit_margin/src/features/devices/connected_devices.dart';
-import 'package:profit_margin/src/features/serial/interacts_serial_ports.dart';
 import 'package:profit_margin/src/core/ui/widgets/app_bar_custom.dart';
 import 'package:profit_margin/src/core/ui/widgets/button_custom.dart';
 
