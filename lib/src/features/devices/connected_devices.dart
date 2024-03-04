@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_libserialport/flutter_libserialport.dart';
-import 'package:profit_margin/ui/style/colors.dart';
-import 'package:profit_margin/ui/style/text_style.dart';
-import 'package:profit_margin/ui/widgets/card_tite_custom.dart';
+import 'package:profit_margin/src/core/ui/style/colors.dart';
+import 'package:profit_margin/src/core/ui/style/text_style.dart';
+import 'package:profit_margin/src/core/ui/widgets/card_tite_custom.dart';
 
 class ConnectedDevices extends StatefulWidget {
   const ConnectedDevices({super.key});

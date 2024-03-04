@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:profit_margin/actions/app_actions.dart';
-import 'package:profit_margin/pages/search_product/connected_devices.dart';
-import 'package:profit_margin/pages/search_product/interacts_serial_ports.dart';
-import 'package:profit_margin/ui/widgets/app_bar_custom.dart';
-import 'package:profit_margin/ui/widgets/button_custom.dart';
+import 'package:profit_margin/src/core/actions/app_actions.dart';
+import 'package:profit_margin/src/features/devices/connected_devices.dart';
+import 'package:profit_margin/src/features/serial/interacts_serial_ports.dart';
+import 'package:profit_margin/src/core/ui/widgets/app_bar_custom.dart';
+import 'package:profit_margin/src/core/ui/widgets/button_custom.dart';
 
 class SearchProduct extends StatefulWidget {
   const SearchProduct({super.key});
@@ -61,10 +61,7 @@ class _SearchProductState extends State<SearchProduct> {
                     label: 'Dispositivos conectados\nCTRL + D',
                     onPressed: () {
                       print('Botão dispositivos conectados');
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                            builder: (context) => const ConnectedDevices()),
-                      );
+                      Navigator.of(context).pushReplacementNamed('/device');
                     },
                   ),
                   const SizedBox(width: 20),
@@ -72,10 +69,8 @@ class _SearchProductState extends State<SearchProduct> {
                     label: 'Interage com portas seriais\nCTRL + U',
                     onPressed: () {
                       print('Botão portas seriais');
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                            builder: (context) => const InteractsSerialPorts()),
-                      );
+                      Navigator.of(context)
+                          .pushReplacementNamed('/serial_ports');
                     },
                   ),
                 ],

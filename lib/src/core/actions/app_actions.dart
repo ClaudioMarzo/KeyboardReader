@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profit_margin/pages/search_product/connected_devices.dart';
-import 'package:profit_margin/pages/search_product/interacts_serial_ports.dart';
+import 'package:profit_margin/src/features/devices/connected_devices.dart';
+import 'package:profit_margin/src/features/serial/interacts_serial_ports.dart';
 
 class ConfirmProductIntent extends Intent {}
 

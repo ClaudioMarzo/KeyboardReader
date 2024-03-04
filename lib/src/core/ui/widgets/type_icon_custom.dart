@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profit_margin/ui/style/colors.dart';
+import 'package:profit_margin/src/core/ui/style/colors.dart';
 
 class TypeIconCustom extends StatelessWidget {
   final IconType icon;

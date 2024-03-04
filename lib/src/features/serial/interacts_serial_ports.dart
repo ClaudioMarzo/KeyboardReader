@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:profit_margin/ui/style/colors.dart';
-import 'package:profit_margin/ui/style/text_style.dart';
-import 'package:profit_margin/ui/widgets/button_custom.dart';
+import 'package:profit_margin/src/core/ui/style/colors.dart';
+import 'package:profit_margin/src/core/ui/style/text_style.dart';
+import 'package:profit_margin/src/core/ui/widgets/button_custom.dart';
 import 'package:serial_port_win32/serial_port_win32.dart';
 
 class InteractsSerialPorts extends StatefulWidget {

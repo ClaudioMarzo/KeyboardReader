@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profit_margin/ui/style/colors.dart';
-import 'package:profit_margin/ui/style/text_style.dart';
-import 'package:profit_margin/ui/widgets/type_icon_custom.dart';
+import 'package:profit_margin/src/core/ui/style/colors.dart';
+import 'package:profit_margin/src/core/ui/style/text_style.dart';
+import 'package:profit_margin/src/core/ui/widgets/type_icon_custom.dart';
 
 class InputSearchCustom extends StatefulWidget {
   const InputSearchCustom({super.key});
