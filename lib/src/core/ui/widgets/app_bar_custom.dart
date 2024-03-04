@@ -34,15 +34,15 @@ class AppBarCustom extends AppBar {
               const InputTypeFilterCustom(),
             ],
           ),
-          // actions: <Widget>[
-          //   Padding(
-          //     padding: const EdgeInsets.only(right: 40),
-          //     child: Image.asset(
-          //       'assets/images/logo_bemol.png',
-          //       width: 120,
-          //       height: 52.09,
-          //     ),
-          //   ),
-          // ],
+          actions: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(right: 40),
+              child: Image.asset(
+                'assets/images/logo_bemol.png',
+                width: 120,
+                height: 52.09,
+              ),
+            ),
+          ],
         );
 }

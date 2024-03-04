@@ -16,7 +16,7 @@ class ProfitMarginApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (_) => const SearchProduct(),
-        '/device': (_) => const ConnectedDevices(),
+        '/devices': (_) => const ConnectedDevices(),
         '/serial_ports': (_) => const InteractsSerialPorts(),
       },
     );

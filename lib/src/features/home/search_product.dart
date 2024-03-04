@@ -59,7 +59,7 @@ class _SearchProductState extends State<SearchProduct> {
                     label: 'Dispositivos conectados\nCTRL + D',
                     onPressed: () {
                       print('Botão dispositivos conectados');
-                      Navigator.of(context).pushReplacementNamed('/device');
+                      Navigator.of(context).pushReplacementNamed('/devices');
                     },
                   ),
                   const SizedBox(width: 20),
