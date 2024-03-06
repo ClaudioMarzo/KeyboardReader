@@ -17,8 +17,6 @@ Para instalar o Flutter, siga os passos abaixo:
 
 3. **Execução**: No prompt de comando em modo administrador, execute `flutter doctor` para verificar o que está faltando para executar o Flutter. A ideia é que o resultado seja semelhante a este:
 
-![alt text](assets\images\doc\build_sucess.png)
-
 ## Build da Aplicação
 
 Após baixar o repositório [profit_margin](), execute os seguintes comandos:
