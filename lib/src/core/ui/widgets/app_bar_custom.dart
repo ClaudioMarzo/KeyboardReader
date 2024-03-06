@@ -27,22 +27,11 @@ class AppBarCustom extends AppBar {
               Text(
                 textAlign: TextAlign.start,
                 "Pesquisar Item",
-                style: TextStyles.i.textRegular
-                    .copyWith(fontSize: 18, color: ColorsCustom.i.white),
+                style: TextStyles.i.textRegular.copyWith(fontSize: 18, color: ColorsCustom.i.white),
               ),
               const InputSearchCustom(),
               const InputTypeFilterCustom(),
             ],
           ),
-          actions: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(right: 40),
-              child: Image.asset(
-                'assets/images/logo_bemol.png',
-                width: 120,
-                height: 52.09,
-              ),
-            ),
-          ],
         );
 }
