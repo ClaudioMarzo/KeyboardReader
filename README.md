@@ -7,7 +7,7 @@
 - Comunicação serial USB 
 - Design da tela do projeto verifica sobre comunicação serial USB
 
-***Pêndencais :**
+**Pêndencais :**
 - Ajuste na UI
 - Ajuste no código
 - Melhoria na leitura e escrita na comunicação serial
