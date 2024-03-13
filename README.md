@@ -3,9 +3,17 @@
 **Objetivo:** `profit_margin` é uma (POC) para validar uma demanda em ambiente desktop usando Flutter.
 
 **O que tem:** 
-- Leitor de teclado
-- Comunicação serial USB
+- Leitor de comandos no teclado
+- Comunicação serial USB 
 - Design da tela do projeto verifica sobre comunicação serial USB
+
+***Pêndencais :**
+- Ajuste na UI
+- Ajuste no código
+- Melhoria na leitura e escrita na comunicação serial
+## Screen
+
+![alt text](assets/images/doc/image.png)
 
 ## Instalação e Configuração 
 

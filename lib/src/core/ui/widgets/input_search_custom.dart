@@ -25,11 +25,10 @@ class _InputSearchState extends State<InputSearchCustom> {
         onChanged: (value) {},
         style: TextStyle(color: ColorsCustom.i.black),
         decoration: InputDecoration(
-          hintStyle: TextStyles.i.textRegular
-              .copyWith(fontSize: 14, color: ColorsCustom.i.grey),
+          hintStyle: TextStyles.i.textRegular.copyWith(fontSize: 14, color: ColorsCustom.i.grey),
           filled: true,
           fillColor: ColorsCustom.i.white,
-          hintText: 'Busque por Descrição ou Código Bemol',
+          hintText: 'Busque por Descrição ou Código do Produto',
           suffixIcon: TypeIconCustom(
             icon: IconType.busca,
             onPressed: () {
